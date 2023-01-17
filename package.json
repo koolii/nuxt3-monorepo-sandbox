@@ -1,0 +1,30 @@
+{
+  "name": "nuxt3-monorepo-sandbox",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev --workspace=frontend",
+    "build:ui": "npm run build --workspace=ui"
+  },
+  "workspaces": [
+    "packages/ui",
+    "packages/frontend"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7.0.0",
+    "yarn": "please_use_npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/koolii/nuxt3-monorepo-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koolii/nuxt3-monorepo-sandbox/issues"
+  },
+  "homepage": "https://github.com/koolii/nuxt3-monorepo-sandbox#readme"
+}
