@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CounterButton, MyButton, NamedButton } from "ui"
+// import StoreCounter from "./components/StoreCounter.vue";
 const message = ref("not clicked")
 </script>
 
@@ -13,6 +14,10 @@ const message = ref("not clicked")
   <div>
     <NamedButton name="My Library Component" @click="message = $event"/>
     <p>{{ message }}</p>
+  </div>
+  <div>
+    <h2>Pinia Counter component</h2>
+    <StoreCounter />
   </div>
   <NuxtWelcome />
 </template>

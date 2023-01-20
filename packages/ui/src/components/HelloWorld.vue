@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import Button from "./Button.vue"
+import Button from "./CountButton.vue"
 
 defineProps<{ msg: string }>()
 
